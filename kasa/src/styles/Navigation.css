@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+}
