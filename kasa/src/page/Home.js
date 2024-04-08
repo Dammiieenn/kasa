@@ -1,10 +1,16 @@
 import React from "react";
-import Logo from ""
+import Navigation from "../components/Navigation";
+import Fouter from "../components/Fouter";
+import Logo from "../components/Logo";
+import Logement from "../components/Logement";
 
 const Home = () => {
     return (
         <div>
-           home 
+         <Logo />
+         <Navigation />
+         <Logement />
+         <Fouter />
         </div>
     );
 };
