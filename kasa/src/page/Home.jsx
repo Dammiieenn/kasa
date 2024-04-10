@@ -1,14 +1,14 @@
 import React from "react";
 import Navigation from "../components/Navigation";
-// import Logement from "../components/Logement";
 import Fouter from "../components/Fouter";
+import Utilitaire from "../utilitaire";
 
 
 const Home = () => {
     return (
         <div>
             <Navigation />
-            {/* <Logement /> */}
+            <Utilitaire />
             <Fouter />
         </div>
     );
