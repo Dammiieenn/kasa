@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const utilitaire = (url) => {
+const UseUtilitaire = (url) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -28,4 +28,4 @@ const utilitaire = (url) => {
   return { data, loading, error };
 };
 
-export default utilitaire;
+export default UseUtilitaire;
