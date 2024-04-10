@@ -11,6 +11,6 @@ function Logement () {
     console.log(data);
   
     return <div>Logement</div>;
-  }
+  };
   
   export default Logement;
