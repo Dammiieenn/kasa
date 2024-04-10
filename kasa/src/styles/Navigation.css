@@ -1,17 +1,19 @@
 .navigation {
     display: flex;
     justify-content: space-between;
+}
 
-    ul {
-        display: flex;
+ul {
+    display: flex;
+    margin-right: 32px;
+}
 
-        a {
-            text-decoration: none;
-            padding: 10px;
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: lightcoral;
+}
 
-            li {
-                cursor: pointer;
-            }
-        }
-    }
+li {
+    cursor: pointer;
 }
