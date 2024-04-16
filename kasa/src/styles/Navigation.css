@@ -1,6 +1,7 @@
 .navigation {
     display: flex;
     justify-content: space-between;
+    font-size: 200%;
 }
 
 ul {
