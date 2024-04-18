@@ -1,7 +1,7 @@
-.imageLogement{
-    background-color:rgb(197, 218, 219);
-    margin-left: 100px;
-    margin-right: 100px;
+img.premiereImage{
+    display: flex;
+    width: 100%;
+    border-radius: 10%;
 }
 ul{
     display: grid;
@@ -10,10 +10,17 @@ ul{
     gap: 40px;
     list-style: none;
 }
-
-img.premiereImage{
+.imageLogement{
+    background-color:rgb(197, 218, 219);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h4{
     display: flex;
-    width: 100%;
-    height: 50%;
-    border-radius: 10%;
+    font-size: 480%;
+    position: relative;
+    bottom: 600px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
 }

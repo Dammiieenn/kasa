@@ -14,6 +14,7 @@ export default function Logement() {
   return (
     <div>
       <img src={image} alt="Premiere image" className="premiereImage" />
+      <h4>Chez vous, partout et ailleurs</h4>
       <div className="imageLogement">
         <ul>
           {data.map((logement, index) => (
