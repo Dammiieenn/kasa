@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/fiche.css";
 
+
 const Fiche = () => {
     return (
         <div>
@@ -16,3 +17,4 @@ const Fiche = () => {
 };
 
 export default Fiche;
+

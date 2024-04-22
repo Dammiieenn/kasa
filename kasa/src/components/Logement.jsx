@@ -23,7 +23,6 @@ export default function Logement() {
               {/* <a href={logement.link} target="_blank" rel="noopener noreferrer" /> */}
               <img src={logement.cover} alt={logement.title} className="imageLogement"
               onClick={() => handleImageClick(logement.link)} 
-              // style={{ cursor: "pointer" }}
               />
             </li>
           ))}
@@ -32,10 +31,6 @@ export default function Logement() {
     </div>
   );
 }
-
-
-
-
 
 
 
