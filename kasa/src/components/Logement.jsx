@@ -20,8 +20,11 @@ export default function Logement() {
           {data.map((logement, index) => (
             <li key={index}>
               <h2>{logement.title}</h2>
-              <a href={logement.link} target="_blank" rel="noopener noreferrer" />
-              <img src={logement.cover} alt={logement.title} className="imageLogement" />
+              {/* <a href={logement.link} target="_blank" rel="noopener noreferrer" /> */}
+              <img src={logement.cover} alt={logement.title} className="imageLogement"
+              onClick={() => handleImageClick(logement.link)} 
+              // style={{ cursor: "pointer" }}
+              />
             </li>
           ))}
         </ul>
@@ -29,3 +32,56 @@ export default function Logement() {
     </div>
   );
 }
+
+
+
+
+
+
+
+/////////ce code ouvre une nouvelle fenetre en cliquant sur une image//////////////
+
+// import React from "react";
+// import UseUtilitaire from "../UseUtilitaire";
+// import "../styles/logement.css";
+
+// function ClickableImage({ src, alt, link }) {
+//   const handleImageClick = () => {
+//     window.open(link, "_blank");
+//   };
+
+//   return (
+//     <img
+//       src={src}
+//       alt={alt}
+//       onClick={handleImageClick}
+//       style={{ cursor: "pointer" }}
+//     />
+//   );
+// }
+
+// export default function Logement() {
+//   const { data, loading, error } = UseUtilitaire("./logements.json");
+
+//   if (loading) return <div>Loading ...</div>;
+//   if (error) return <div>Error: {error}</div>;
+
+//   console.log(data);
+
+//   return (
+//     <div>
+//       <div className="PremiereImage"></div>
+//       <h4>Chez vous, partout et ailleurs</h4>
+//       <div className="imageLogement">
+//         <ul>
+//           {data.map((logement, index) => (
+//             <li key={index}>
+//               <h2>{logement.title}</h2>
+//               <ClickableImage src={logement.cover} alt={logement.title} link={logement.link} />
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+//     </div>
+//   );
+// }
