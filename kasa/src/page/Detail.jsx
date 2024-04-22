@@ -1,17 +1,16 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import Recherche from "../components/Recherche";
+import Fiche from '../components/Fiche';
 import Fouter from '../components/Fouter';
 
-const Apropos = () => {
+const Detail = () => {
     return (
         <div>
             <Navigation />
-            <Recherche />
+            <Fiche />
             <Fouter />
-            
         </div>
     );
 };
 
-export default Apropos;
+export default Detail;

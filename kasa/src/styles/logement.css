@@ -1,7 +1,12 @@
-img.premiereImage{
-    display: flex;
-    width: 100%;
-    border-radius: 10%;
+.PremiereImage{
+    background-image: url("../image/image1.png");
+    height: 600px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-top: 40px;
 }
 ul{
     display: grid;
@@ -23,4 +28,5 @@ h4{
     justify-content: center;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
+    margin-top: 220px;
 }

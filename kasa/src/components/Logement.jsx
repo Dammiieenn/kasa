@@ -1,7 +1,6 @@
 import React from "react";
 import UseUtilitaire from "../UseUtilitaire";
 import "../styles/logement.css";
-import image from "../image/image1.png";
 
 export default function Logement() {
   const { data, loading, error } = UseUtilitaire("./logements.json");
@@ -13,13 +12,15 @@ export default function Logement() {
 
   return (
     <div>
-      <img src={image} alt="Premiere image" className="premiereImage" />
+    <div className="PremiereImage">
+    </div>
       <h4>Chez vous, partout et ailleurs</h4>
       <div className="imageLogement">
         <ul>
           {data.map((logement, index) => (
             <li key={index}>
               <h2>{logement.title}</h2>
+              <a href={logement.link} target="_blank" rel="noopener noreferrer" />
               <img src={logement.cover} alt={logement.title} className="imageLogement" />
             </li>
           ))}
@@ -28,4 +29,3 @@ export default function Logement() {
     </div>
   );
 }
-

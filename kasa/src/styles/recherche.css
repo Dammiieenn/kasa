@@ -1,0 +1,50 @@
+.DeuxiemeImage{
+    background-image:url("../image/image2.png") ;
+    height: 600px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+.Collapse {
+    margin-top: 70px; /* Ajustez cet espacement selon vos besoins */
+    margin-left: 15%;
+}
+
+.collapsible {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 35px;
+    transition: background-color 0.4s;
+    margin-bottom: 70px;
+}
+
+.collapsible:hover {
+    background-color:  lightcoral;
+}
+
+/* Style les collapsibles quand ils sont actifs */
+.active, .collapsible:hover {
+    background-color: #444;
+}
+
+/* Style de l'icône pour ouvrir et fermer le collapsible */
+.collapsible:after {
+    content: '\002B'; /* Plus sign (+) */
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212"; /* Moins signe (-) */
+}
