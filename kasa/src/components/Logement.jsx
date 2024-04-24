@@ -20,7 +20,7 @@ export default function Logement() {
             <li key={item.id}>
               <Link to={`/Detail/${item.id}`}>
                 <div className="item" appartement={item}>
-                  <img src={item.cover} alt="appartement"></img>
+                  <img src={item.cover} alt="appartement" className="responsive-image"></img>
                   <h3 className="title"> {item.title}</h3>
                 </div>
               </Link>

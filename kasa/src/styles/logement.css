@@ -30,3 +30,13 @@ h4{
     text-shadow: 1px 1px 1px black;
     margin-top: 220px;
 }
+/* Media query pour les écrans de téléphone */
+@media only screen and (max-width: 600px) {
+    .galerie {
+        grid-template-columns: 1fr; /* Mettre en colonne */
+    }
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
