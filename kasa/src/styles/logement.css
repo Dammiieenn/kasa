@@ -30,8 +30,14 @@ h4{
     text-shadow: 1px 1px 1px black;
     margin-top: 220px;
 }
+@media only screen and (max-width: 1024px) {
+    .galerie {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Mettre en colonne */
+    }
+}
 /* Media query pour les écrans de téléphone */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .galerie {
         display: grid;
         grid-template-columns: 1fr; /* Mettre en colonne */
