@@ -6,10 +6,7 @@ import Fouter from '../components/Fouter';
 const Apropos = () => {
     return (
         <div>
-            <Navigation />
             <Recherche />
-            <Fouter />
-            
         </div>
     );
 };

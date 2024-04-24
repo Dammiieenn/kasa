@@ -8,7 +8,7 @@ const Navigation = () => {
             <div className='logo'>
                 <img src='./logo.png' alt='logo react' />
             </div>
-            <ul>
+            <ul className='title'>
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>Acceuil</li>
                 </NavLink>

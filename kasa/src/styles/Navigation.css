@@ -19,3 +19,6 @@ a {
 li {
     cursor: pointer;
 }
+.title{
+    list-style: none;
+}
